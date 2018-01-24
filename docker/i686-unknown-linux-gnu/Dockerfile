@@ -1,5 +1,7 @@
 FROM ubuntu:12.04
 
+RUN sed -i 's|http://archive.ubuntu.com|http://old-releases.ubuntu.com|' /etc/apt/sources.list
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     ca-certificates \
