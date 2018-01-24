@@ -1,6 +1,7 @@
 set -ex
 
 main() {
+    return
     if [ $TRAVIS_BRANCH != master ] && [ -z $TRAVIS_TAG ]; then
         return
     fi
