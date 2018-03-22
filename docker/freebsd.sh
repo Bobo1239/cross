@@ -53,7 +53,7 @@ main() {
             ;;
     esac
 
-    curl ftp://ftp.freebsd.org/pub/FreeBSD/releases/$bsd_arch/10.2-RELEASE/base.txz | \
+    curl https://download.freebsd.org/ftp/releases/$bsd_arch/10.2-RELEASE/base.txz | \
         tar -C $td/freebsd -xJ ./usr/include ./usr/lib ./lib
 
     cd binutils-build
