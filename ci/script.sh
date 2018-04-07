@@ -77,10 +77,7 @@ EOF
         echo "git2 = {git = \"https://github.com/bobo1239/git2-rs\"}" >> Cargo.toml
         echo "libgit2-sys = {git = \"https://github.com/bobo1239/git2-rs\"}" >> Cargo.toml
 
-        echo "[build.env]" >> Cross.toml
-        echo "passthrough = [\"CFLAGS\"]" >> Cross.toml
-
-        CFLAGS="-D_POSIX_PTHREAD_SEMANTICS" cross build --target $TARGET
+        cross build --target $TARGET
         popd
 
         rm -rf $td
