@@ -34,7 +34,7 @@ main() {
             git clone \
                 --depth 1 \
                 --recursive \
-                https://github.com/japaric/cortest $td
+                https://github.com/bobo1239/cortest $td
 
             pushd $td
             cross run --target $TARGET --example hello --release
