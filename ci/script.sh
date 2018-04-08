@@ -51,7 +51,7 @@ main() {
         git clone \
             --depth 1 \
             --recursive \
-            https://github.com/rust-lang-nursery/compiler-builtins $td
+            https://github.com/bobo1239/compiler-builtins $td
 
         pushd $td
         cat > Cross.toml <<EOF
@@ -112,7 +112,7 @@ EOF
             git clone \
                 --depth 1 \
                 --recursive \
-                https://github.com/rust-lang-nursery/compiler-builtins \
+                https://github.com/bobo1239/compiler-builtins \
                 $td
 
             pushd $td
