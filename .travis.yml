@@ -67,6 +67,8 @@ matrix:
     - env: TARGET=thumbv7em-none-eabihf                         STD=1
     - env: TARGET=thumbv7m-none-eabi                            STD=1
 
+before_install:
+  - python3 -c 'import os,sys; os.set_blocking(sys.stdout.fileno(), True)'
 
 install:
   - curl https://sh.rustup.rs -sSf |
